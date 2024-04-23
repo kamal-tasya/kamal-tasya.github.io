@@ -1,2 +1,1 @@
-# kamal-tasya.github.io
-kamal-tasya
+# maul-maya.github.io
