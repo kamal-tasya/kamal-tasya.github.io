@@ -58,7 +58,7 @@
         <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center
     text-white">
             <main>
-                <h4>Kepada <span id="nama"></span></h4>
+                <h4>Kepada <span id="nama"></span>&nbsp;<span id="belakang"></span></h4>
                 <h1>Kamal & Tasya</h1>
                 <p>Akan melangsungkan akad pernikahan dalam</p>
                 <div class="simply-countdown " data-aos="flip-up" data-aos-duration="1500">
@@ -74,7 +74,7 @@
         <section id="pembuka" class="pembuka d-flex justify-content-center align-items-center">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-10  text-center" data-aos="fade-up" data-aos-duration="1500"">
+                    <div class="col-md-8 col-10  text-center" data-aos="fade-up" data-aos-duration="1500">
                         <p>Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu
                             dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan
                             di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat
@@ -394,7 +394,9 @@
                         }
                     }
                     var nama = GetURLParameter('nama');
+                    var belakang= GetURLParameter('belakang');
                     document.getElementById("nama").innerHTML = nama;
+                    document.getElementById("belakang").innerHTML = belakang;
 
                     const rootElemet = document.querySelector(':root');
                     function disablescroll() {
