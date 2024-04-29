@@ -393,11 +393,18 @@
                             }
                         }
                     }
+                    
                     var nama = GetURLParameter('nama');
                     var belakang= GetURLParameter('belakang');
+                    if (nama == undefined){
+                        nama="Bapak/Ibu/Saudara/I,"
+                    }
+                    if (belakang == undefined){
+                        belakang=""
+                    }
                     document.getElementById("nama").innerHTML = nama;
                     document.getElementById("belakang").innerHTML = belakang;
-
+                    
                     const rootElemet = document.querySelector(':root');
                     function disablescroll() {
 
