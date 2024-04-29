@@ -114,16 +114,28 @@ body{
     font-weight: bold;
 }
 
-.home ,.pembuka , .penutup h3{
+.home ,.pembuka h3{
     color: #444444;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.home ,.pembuka , .penutup p{
+.penutup h3{
+    color: #444444;
+    font-family: "Parisienne";
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.home{
     font-size: 1.2rem;
     color:#333333;
     
+}
+
+.pembuka , .penutup p{
+    font-size: 1.6rem;
+    color:#333333;
 }
 
 .home .couple{
@@ -453,9 +465,11 @@ footer{
  .simply-countdown>.simply-section{
     padding: 60px;
  }
+ 
+ .home .heart{
+    display: none;
 
-
-
+}
 
 }
 
