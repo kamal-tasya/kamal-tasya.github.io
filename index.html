@@ -58,7 +58,7 @@
         <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center
     text-white">
             <main>
-                <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+                <h4>Kepada <span id="nama"></span></h4>
                 <h1>Kamal & Tasya</h1>
                 <p>Akan melangsungkan akad pernikahan dalam</p>
                 <div class="simply-countdown " data-aos="flip-up" data-aos-duration="1500">
@@ -167,10 +167,12 @@
                                     <table style="width: 100%;">
                                         <h4 style="font-size: 1.8rem;"><strong>AKAD NIKAH</strong></h4><br>
                                         <tr>
-                                            <td style="width: 35%;font-size: 1.4rem;text-align: right;padding-right: 5%;">
+                                            <td
+                                                style="width: 35%;font-size: 1.4rem;text-align: right;padding-right: 5%;">
                                                 Selasa
                                             </td>
-                                            <td style="width: 30%;border-left: 2px solid black;border-right: 2px solid black;font-size: 1.4rem;">
+                                            <td
+                                                style="width: 30%;border-left: 2px solid black;border-right: 2px solid black;font-size: 1.4rem;">
                                                 <span style="font-size: 2rem;">14</span><br>
                                                 2024
                                             </td>
@@ -192,10 +194,12 @@
                                     <table style="width: 100%;">
                                         <h4 style="font-size: 1.8rem;"><strong>TASYAKURAN</strong></h4><br>
                                         <tr>
-                                            <td style="width: 35%;font-size: 1.4rem;text-align: right;padding-right: 5%;">
+                                            <td
+                                                style="width: 35%;font-size: 1.4rem;text-align: right;padding-right: 5%;">
                                                 Selasa
                                             </td>
-                                            <td style="width: 30%;border-left: 2px solid black;border-right: 2px solid black;font-size: 1.4rem;">
+                                            <td
+                                                style="width: 30%;border-left: 2px solid black;border-right: 2px solid black;font-size: 1.4rem;">
                                                 <span style="font-size: 2rem;">14</span><br>
                                                 2024
                                             </td>
@@ -211,7 +215,8 @@
                                             <td>&nbsp;</td>
                                         </tr>
                                     </table>
-                                    <p><strong><br>Bertempat di kediaman wanita</strong><br>kp. cempaka jl. encep kartawiria no. 74</p>
+                                    <p><strong><br>Bertempat di kediaman wanita</strong><br>kp. cempaka jl. encep
+                                        kartawiria no. 74</p>
                                 </div>
                             </div>
                             <div class="row justify-content-center align-items-center mt-5">
@@ -377,6 +382,20 @@
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
                 <script>
+
+                    function GetURLParameter(sParam) {
+                        var sPageURL = window.location.search.substring(1);
+                        var sURLVariables = sPageURL.split('&');
+                        for (var i = 0; i < sURLVariables.length; i++) {
+                            var sParameterName = sURLVariables[i].split('=');
+                            if (sParameterName[0] == sParam) {
+                                return sParameterName[1];
+                            }
+                        }
+                    }
+                    var nama = GetURLParameter('nama');
+                    document.getElementById("nama").innerHTML = nama;
+
                     const rootElemet = document.querySelector(':root');
                     function disablescroll() {
 
