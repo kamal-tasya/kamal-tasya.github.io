@@ -465,7 +465,7 @@ footer{
  .simply-countdown>.simply-section{
     padding: 60px;
  }
- 
+
  .home .heart{
     display: none;
 
@@ -525,11 +525,12 @@ footer{
     display: none;
 
 }
-.home h2, .info h2, .gift h2{
+ .info h2, .gift h2{
     font-size: 4rem;
     }
 
 }
+
 
 
 
@@ -567,8 +568,12 @@ footer{
 }
 
 
-.hero h2,.home h2, .info h2, .gift h2{
+.hero h2,.info h2, .gift h2{
     font-size: 4rem;
+}
+
+.home h2{
+    font-size: 3.8rem;
 }
 
 .hero::before{
